@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragonFruit Express</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #f78f1e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .order-form input,
+        .order-form select,
+        .order-form button {
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+        .order-form button {
+            background-color: #f78f1e;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .order-form button:hover {
+            background-color: #d77b18;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Uma Farms</h1>
+        <p>Fresh Dragon Fruits Delivered to Your Doorstep</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order Now</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to Uma Farms</h2>
+        <p>We offer the freshest and most delicious dragon fruits directly from the farm to your home. Order online and have it delivered to your doorstep!</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <p>Choose your favorite type of dragonfruit:</p>
+        <ul>
+            <li>Red Dragonfruit - ₹300 per kg</li>
+            <li>White Dragonfruit - ₹250 per kg</li>
+            
+        </ul>
+    </section>
+
+    <section id="order">
+        <h2>Order Now</h2>
+        <form class="order-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="fruit">Choose Dragonfruit:</label>
+            <select id="fruit" name="fruit" required>
+                <option value="red">Red Dragonfruit</option>
+                <option value="white">White Dragonfruit</option>
+                
+            </select>
+            
+            <label for="quantity">Quantity (kg):</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or want to inquire about your order, feel free to reach out!</p>
+        <p>Email: umafarms@gmail.com</p>
+        <p>Phone: +91 97386 52433</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DragonFruit Express. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
